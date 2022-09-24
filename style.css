@@ -1,0 +1,106 @@
+body{
+    background-color: #b1e8f3;
+    overflow: hidden;
+}
+#logo{
+    position: absolute;
+    padding-top: 25px;
+    padding-left: 30px;
+}
+
+#texto{
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 168px;
+    text-decoration: none;
+    width: 680px;
+    height: 400px;
+    text-transform: lowercase;
+    border: none;
+    font-style: normal;
+    font-size: 32px;
+    resize: none;
+    color: #0A3871;
+    background: transparent;
+}
+
+#grupo-form{
+    position: absolute;
+    margin-top: 800px;
+    margin-left: 240px;
+}
+
+#criptografar, #descriptografar{
+    position: absolute;
+    margin-top: 850px;
+    margin-left: 240px;
+    width: 328px;
+    padding: 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 24px;
+}
+#criptografar{
+    margin-left: 240px;
+    color:white;
+    background-color:#0A3871;
+}
+#descriptografar{
+    margin-left: 640px;
+    color:#0A3871;
+    background-color: #D8DFE8;
+}
+
+.mensage-box{
+    position: absolute;
+    width: 400px;
+    height: 750px;
+    left: 70%;
+    top: 20px;
+    padding-left: 20px;
+    padding-top: 80px;
+    background-color: #fff;
+    border-radius: 32px;
+}
+#div-desaparece{
+    padding-top: 80px;
+}
+#div-desaparece h2, h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#0A3871;
+    padding: 30px;
+    text-align: center;
+}
+#div-desaparece h2{
+    font-size: large;
+    font-weight: bold;
+    align-items: center;
+}
+.div-mensagem{
+    position: relative;
+    text-decoration: none;
+    width: 380px;
+    height: 650px;
+    text-transform: lowercase;
+    border: none;
+    font-style: normal;
+    font-size: 32px;
+    resize: none;
+    color: #0A3871;
+    background: transparent;
+    border: none;
+}
+
+.btn-copiar{
+    display: flex;
+    justify-content: center;
+    width: 328px;
+    padding: 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    color:#0A3871;
+    background-color: #D8DFE8;
+}
