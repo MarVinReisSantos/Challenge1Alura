@@ -4,6 +4,12 @@ const btnCriptografar = document.querySelector("#criptografar");
 const btnDescriptografar = document.querySelector("#descriptografar");
 const mensagem = document.querySelector("#mensagem");
 const btnCopiar = document.querySelector("#btn-copiar");
+const btnOk = document.querySelector('#ok')
+
+
+document.getElementById('ok').onclick = (e) =>{
+  document.getElementById("tela-texto-copiado").style.display = 'none';
+}
 
 //captura o id e esconde a div-aparece da tela
 document.getElementById("div-aparece").style.display = 'none';
@@ -67,6 +73,7 @@ function aparece() {
   document.getElementById("div-aparece").style.display = 'block';
 }
 function desaparece() {
+  document.getElementById("tela-texto-copiado").style.display = 'block';
   document.getElementById("div-desaparece").style.display = 'block';
   document.getElementById("div-aparece").style.display = 'none';
 }
