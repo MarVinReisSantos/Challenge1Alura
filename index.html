@@ -13,31 +13,34 @@
     <header>
         <img src="images/logo.png" onclick="home()" alt="logomarca" id="logo">
     </header>
-    <main>
-        <section>
-            <textarea name="texto" id="texto" placeholder="Digite seu texto" id="texto" cols="30" rows="10"></textarea>
+    <main class="container">
+        <section class="section-text-area">
+            <textarea name="texto" id="texto" placeholder="Digite seu texto" cols="30" rows="10"></textarea>
             <div id="grupo-form">
                 <img src="images/!.png" alt="exclamacao">
                 Apenas letras minusculas e sem acento.
             </div>
-            <button id="criptografar">Criptografar</button>
-            <button id="descriptografar">Descriptografar</button>
+            <div class="botao">
+                <button id="criptografar">Criptografar</button>
+                <button id="descriptografar">Descriptografar</button>
+            </div>
                 
         </section>
         <section class="mensage-box">
             <div id="div-desaparece" class="message-box-div">
-                <img src="images/mensaje.svg"> 
+                <img class="crianca-lupa" src="images/mensaje.svg"> 
                 <h2>Nenhuma mensagem encontrada</h2>
                 <h3>Digite um texto que você deseja criptografar ou descriptografar.</h3>
-              </div> 
+            </div> 
             <div id="div-aparece">
                 <textarea class="div-mensagem" disabled type="text" id="mensagem" placeholder="Nenhuma mensagem"></textarea>
                 <input class="btn-copiar" type="submit" value="copiar" id="btn-copiar">
+                
             </div>
         </section>
     </main>
 
-    <aside id="tela-texto-copiado">
+    <aside id="tela-texto-copiado" style="display: none;">
         <div>
             <h2>Texto Copiado com sucesso</h2>
             <button id="ok">Ok</button>

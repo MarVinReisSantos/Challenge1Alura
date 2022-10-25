@@ -1,12 +1,251 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@media screen and (min-width: 0){
+    body{
+        background-color: #b1e8f3;
+        max-width: 85vw;
+        max-height: 80vh;
+        overflow: hidden;
+    }
+    #logo{
+        padding-top: 24px;
+        height: 48px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #texto{
+        /* topo | direita | inferior | esquerda */
+        margin: 50px 1rem 0 1rem;
+        width: 80vw;
+        height: auto;
+        border: none;
+        font-style: normal;
+        font-size: 1rem;
+        resize: none;
+        color: #0A3871;
+        background: transparent;
+        outline: 0;
+    }
+    #grupo-form{
+        font-size: 0.7rem;
+        margin: 1rem 0 10px 10px;
+    }
+    /* .grupo-form::before{
+        content: "";
+        background-image: url("./images/!.png");
+        background-repeat: no-repeat;
+        margin-left: 10px;        
+        margin-right: 8px;
+        padding-right: 20px;
+    } */
+    .botao{
+        display: flex;
+        flex-direction: column;
+    }
+    #criptografar, #descriptografar{
+        width: 80vw;
+        padding: 1.5rem;
+        /* vertical | horizontal */
+        margin: 0 1rem;
+        border-radius: 1.5rem;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    #criptografar{
+        color:white;
+        background-color:#0A3871;
+    }
+    #descriptografar{
+        color:#0A3871;
+        background-color: #D8DFE8;
+    }
+    .crianca-lupa{
+        display: none;
+    }
+    .mensage-box{
+        width: 80vw;
+        margin: 2rem 1rem 60rem 1rem;
+        background-color: #fff;
+        border-radius: 2rem;
+    }
+    #div-desaparece h2{
+        color:#343A40;
+        font-family: 'Inter', sans-serif;;
+        font-size: 1.5rem;
+        padding: 2rem 2rem 0 2rem;
+        text-align: center;
+        font-size: large;
+        text-align: center;
+        font-weight: 700;
+        line-height: 120%;
+    }
+    #div-desaparece h3{
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        line-height: 150%;
+        font-weight: 400;
+        color:#495057;
+        padding: 1rem 2rem 2rem 2rem;
+        text-align: center;
+    }
+    #div-aparece{
+        width: 400px;
+        height: auto;
+        
+    }
+    .div-mensagem{
+        justify-content: center;
+        text-decoration: none;
+        text-transform: lowercase;
+        border: none;
+        font-style: normal;
+        font-size: 1rem;
+        resize: none;
+        font-family: 'Inter';
+        font-weight: 400;
+        line-height: 150%;
+        margin: 2rem 2rem 0 2rem;
+        height: 200px;
+        color: #0A3871;
+        background: transparent;
+        border: none;
+        outline: 0;
+    } 
+    
+    .btn-copiar{
+        padding: 20px 30vw;
+        border-radius: 24px;
+        font-size: 16px;
+        color:#0A3871;
+        background-color: #fff;
+        margin-left: 22px;
+    }
+    
+    #tela-texto-copiado{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.3);
+        display: none;
+    }
+    #tela-texto-copiado div{
+        position: absolute;
+        top: 30%;
+        left: 40%;
+    }
+    #tela-texto-copiado h2{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:#0A3871;
+        padding: 30px;
+        text-align: center;
+        font-size: 30px;
+        text-transform: lowercase;
+    }
+    #tela-texto-copiado button{
+        display: flex;
+        justify-content: center;
+        width: 328px;
+        padding: 14px;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        color:#0A3871;
+        background-color: #D8DFE8;
+        transition: all ease 500ms;
+    }
+    #tela-texto-copiado button:hover{
+        transform: scale(1.05);
+        background-color: rgba(255,255,255,0.3);
+    } 
+}
+
+
+@media screen and (min-width: 768px){
+    #texto{
+        /* topo | direita | inferior | esquerda */
+        margin: 50px 1rem 0 1rem;
+        width: 90%;
+        height: 400px;
+    }
+    .botao{
+        display: flex;
+        flex-direction: row;
+    }
+    #criptografar, #descriptografar{
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    .mensage-box{
+        width: 90%;
+    }
+    .crianca-lupa{
+        display: none;
+    }
+    .btn-copiar{
+        padding: 20px 41vw;
+        margin-left: 20px;
+    }
+    .div-mensagem{
+        width: 80vw;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 200px;
+    }
+    #texto{
+        /* topo | direita | inferior | esquerda */
+        margin: 50px 1rem 0 1rem;
+        width: 60vw;
+        height: 400px;
+        margin-bottom: 200px;
+    }
+    .mensage-box{
+        margin: -50px;
+        width: 25%;
+        height: 850px;
+        margin-bottom: 250px;
+    }
+    .crianca-lupa{
+        margin-top: 160px;
+        display: block;
+    }
+    .btn-copiar{
+        padding: 20px 50px;
+        margin-left: 130px;
+    }
+    #div-aparece{
+        width: 400px;
+        height: 700px;
+        
+    }
+    .div-mensagem{
+        width: 250px;
+        height: 700px;
+    }
+
+}
+/* body{
     background-color: #b1e8f3;
     overflow: hidden;
 
 }
 #logo{
     position: absolute;
-    padding-top: 25px;
-    padding-left: 30px;
+    padding-top: 40px;
+    padding-left: 20px;
+    height: 48px;
 }
 
 #texto{
@@ -145,4 +384,4 @@ body{
 #tela-texto-copiado button:hover{
     transform: scale(1.05);
     background-color: rgba(255,255,255,0.3);
-}
+} */
