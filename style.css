@@ -3,9 +3,7 @@
 @media screen and (min-width: 0){
     body{
         background-color: #b1e8f3;
-        max-width: 85vw;
-        max-height: 80vh;
-        overflow: hidden;
+        font-family: 'Inter', sans-serif;
     }
     #logo{
         padding-top: 24px;
@@ -14,13 +12,16 @@
     .container{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        margin: 0 auto;
+        /* width: 80%; */
+    }
+    .section-text-area{
+        display: flex;
+        flex-direction: column;
     }
     #texto{
         /* topo | direita | inferior | esquerda */
         margin: 50px 1rem 0 1rem;
-        width: 80vw;
-        height: auto;
         border: none;
         font-style: normal;
         font-size: 1rem;
@@ -33,25 +34,16 @@
         font-size: 0.7rem;
         margin: 1rem 0 10px 10px;
     }
-    /* .grupo-form::before{
-        content: "";
-        background-image: url("./images/!.png");
-        background-repeat: no-repeat;
-        margin-left: 10px;        
-        margin-right: 8px;
-        padding-right: 20px;
-    } */
     .botao{
         display: flex;
         flex-direction: column;
     }
     #criptografar, #descriptografar{
-        width: 80vw;
+        border-radius: 1.5rem;
+        font-size: 1rem;
         padding: 1.5rem;
         /* vertical | horizontal */
         margin: 0 1rem;
-        border-radius: 1.5rem;
-        font-size: 1rem;
         margin-bottom: 20px;
     }
     #criptografar{
@@ -66,14 +58,12 @@
         display: none;
     }
     .mensage-box{
-        width: 80vw;
-        margin: 2rem 1rem 60rem 1rem;
+        margin: 2rem 1rem 1.5rem 1rem;
         background-color: #fff;
         border-radius: 2rem;
     }
     #div-desaparece h2{
         color:#343A40;
-        font-family: 'Inter', sans-serif;;
         font-size: 1.5rem;
         padding: 2rem 2rem 0 2rem;
         text-align: center;
@@ -83,305 +73,138 @@
         line-height: 120%;
     }
     #div-desaparece h3{
-        font-family: 'Inter', sans-serif;
         font-size: 1rem;
-        line-height: 150%;
+        line-height: 120%;
         font-weight: 400;
         color:#495057;
         padding: 1rem 2rem 2rem 2rem;
         text-align: center;
     }
-    #div-aparece{
-        width: 400px;
-        height: auto;
-        
-    }
     .div-mensagem{
-        justify-content: center;
+        background-color: transparent;
+        border: none;
+        color: #0A3871;
+        display: block;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1rem;
+        height: 200px;
+        line-height: 150%;
+        margin: 20px auto;
+        resize: none;
+        outline: 0;
         text-decoration: none;
         text-transform: lowercase;
-        border: none;
-        font-style: normal;
-        font-size: 1rem;
-        resize: none;
-        font-family: 'Inter';
-        font-weight: 400;
-        line-height: 150%;
-        margin: 2rem 2rem 0 2rem;
-        height: 200px;
-        color: #0A3871;
-        background: transparent;
-        border: none;
-        outline: 0;
+        width: 80%;
     } 
-    
     .btn-copiar{
-        padding: 20px 30vw;
-        border-radius: 24px;
-        font-size: 16px;
-        color:#0A3871;
         background-color: #fff;
-        margin-left: 22px;
-    }
-    
+        border-radius: 24px;
+        color:#0A3871;
+        display: block;
+        font-size: 16px;
+        margin: 30px auto;
+        padding: 1rem 20%;
+        text-align: center;
+
+    } 
     #tela-texto-copiado{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: rgba(0,0,0,0.3);
+        background-color: rgba(0,0,0,0.5);
         display: none;
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
     #tela-texto-copiado div{
+        background-color: rgba(247, 246, 246, 0.4);
+        padding: 20px 0;
         position: absolute;
         top: 30%;
-        left: 40%;
+        left: auto;
+        width: 100%;
     }
     #tela-texto-copiado h2{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         color:#0A3871;
-        padding: 30px;
+        padding: 1.5rem;
         text-align: center;
-        font-size: 30px;
+        font-size: 1.5rem;
         text-transform: lowercase;
     }
     #tela-texto-copiado button{
+        background-color: #D8DFE8;
+        border-radius: 20px;
+        color:#0A3871;
         display: flex;
         justify-content: center;
-        width: 328px;
+        margin-left: auto;
+        max-width: 328px;
+        margin-right: auto;
         padding: 14px;
-        border-radius: 20px;
         font-weight: bold;
         font-size: 24px;
-        margin-left: auto;
-        margin-right: auto;
-        color:#0A3871;
-        background-color: #D8DFE8;
         transition: all ease 500ms;
+        width: 60%;
     }
     #tela-texto-copiado button:hover{
         transform: scale(1.05);
         background-color: rgba(255,255,255,0.3);
-    } 
+    }  
 }
-
 
 @media screen and (min-width: 768px){
+   #logo{
+        padding-top: 73px;
+        height: 48px;
+        padding-left: 40px;
+   }
+   .container{
+        padding: 0 40px;
+    }
     #texto{
-        /* topo | direita | inferior | esquerda */
-        margin: 50px 1rem 0 1rem;
-        width: 90%;
-        height: 400px;
+        padding: 0 20px;
+        font-size: 1.25rem;
+        height: 350px;
     }
     .botao{
-        display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
     }
     #criptografar, #descriptografar{
-        width: 40%;
-        margin-bottom: 20px;
-    }
-    .mensage-box{
-        width: 90%;
-    }
-    .crianca-lupa{
-        display: none;
+        font-size: 1.25rem;
+        margin: 0.5rem 1rem;
+        margin-bottom: 0;
+        width: 450px;
+        padding: 1rem;
     }
     .btn-copiar{
-        padding: 20px 41vw;
-        margin-left: 20px;
-    }
-    .div-mensagem{
-        width: 80vw;
-    }
+        padding: 1rem 30%;
+    } 
 }
-
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1400px){ 
     .container{
-        display: flex;
         flex-direction: row;
-        width: 100%;
-        margin-left: 200px;
-    }
-    #texto{
-        /* topo | direita | inferior | esquerda */
-        margin: 50px 1rem 0 1rem;
-        width: 60vw;
-        height: 400px;
-        margin-bottom: 200px;
-    }
-    .mensage-box{
-        margin: -50px;
-        width: 25%;
-        height: 850px;
-        margin-bottom: 250px;
+        padding: 0 100px;
+        height: 600px;
     }
     .crianca-lupa{
-        margin-top: 160px;
         display: block;
     }
-    .btn-copiar{
-        padding: 20px 50px;
-        margin-left: 130px;
+    #div-desaparece{
+        position: relative;
+        top: 100px;
     }
-    #div-aparece{
-        width: 400px;
-        height: 700px;
-        
+    .mensage-box{
+        margin-left: 80px;
+        position: relative;
+        top: -100px;
+        height: 750px;
+        width: 350px;
     }
     .div-mensagem{
-        width: 250px;
-        height: 700px;
-    }
+        height: 600px;
+    } 
 
-}
-/* body{
-    background-color: #b1e8f3;
-    overflow: hidden;
-
-}
-#logo{
-    position: absolute;
-    padding-top: 40px;
-    padding-left: 20px;
-    height: 48px;
-}
-
-#texto{
-    position: absolute;
-    margin-left: 240px;
-    margin-top: 168px;
-    text-decoration: none;
-    width: 680px;
-    height: 400px;
-    text-transform: lowercase;
-    border: none;
-    font-style: normal;
-    font-size: 32px;
-    resize: none;
-    color: #0A3871;
-    background: transparent;
-    outline: 0;
-}
-
-#grupo-form{
-    position: absolute;
-    margin-top: 800px;
-    margin-left: 240px;
-}
-
-#criptografar, #descriptografar{
-    position: absolute;
-    margin-top: 850px;
-    margin-left: 240px;
-    width: 328px;
-    padding: 14px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 24px;
-}
-#criptografar{
-    margin-left: 240px;
-    color:white;
-    background-color:#0A3871;
-}
-#descriptografar{
-    margin-left: 640px;
-    color:#0A3871;
-    background-color: #D8DFE8;
-}
-
-.mensage-box{
-    position: absolute;
-    width: 400px;
-    height: 750px;
-    left: 70%;
-    top: 20px;
-    padding-left: 20px;
-    padding-top: 80px;
-    background-color: #fff;
-    border-radius: 32px;
-}
-#div-desaparece{
-    padding-top: 80px;
-}
-#div-desaparece h2, h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:#0A3871;
-    padding: 30px;
-    text-align: center;
-}
-#div-desaparece h2{
-    font-size: large;
-    font-weight: bold;
-    align-items: center;
-}
-.div-mensagem{
-    position: relative;
-    text-decoration: none;
-    width: 380px;
-    height: 650px;
-    text-transform: lowercase;
-    border: none;
-    font-style: normal;
-    font-size: 32px;
-    resize: none;
-    color: #0A3871;
-    background: transparent;
-    border: none;
-    outline: 0;
-}
-
-.btn-copiar{
-    display: flex;
-    justify-content: center;
-    width: 328px;
-    padding: 14px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    color:#0A3871;
-    background-color: #D8DFE8;
-}
-
-#tela-texto-copiado{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.3);
-    display: none;
-}
-#tela-texto-copiado div{
-    position: absolute;
-    top: 30%;
-    left: 40%;
-}
-#tela-texto-copiado h2{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:#0A3871;
-    padding: 30px;
-    text-align: center;
-    font-size: 30px;
-    text-transform: lowercase;
-}
-#tela-texto-copiado button{
-    display: flex;
-    justify-content: center;
-    width: 328px;
-    padding: 14px;
-    border-radius: 20px;
-    font-weight: bold;
-    font-size: 24px;
-    margin-left: auto;
-    margin-right: auto;
-    color:#0A3871;
-    background-color: #D8DFE8;
-    transition: all ease 500ms;
-}
-#tela-texto-copiado button:hover{
-    transform: scale(1.05);
-    background-color: rgba(255,255,255,0.3);
-} */
+} 
